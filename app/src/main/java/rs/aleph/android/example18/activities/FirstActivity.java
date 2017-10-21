@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+import android.support.design.widget.Snackbar;
 
 import java.util.ArrayList;
 
@@ -260,6 +261,7 @@ public class FirstActivity extends AppCompatActivity implements MasterFragment.O
                 break;
             case R.id.action_delete:
                 Toast.makeText(this, "Action " + getString(R.string.fragment_detal_action_delete) + " executed.", Toast.LENGTH_SHORT).show();
+				Snackbar.make(findViewById(R.id.master_view), "test", Snackbar.LENGTH_SHORT).show();
                 break;
 		}
 
